@@ -18,7 +18,7 @@
 
 ## <img width="5%" title="pycharm" src="resources/images/logo/pycharm.png"> Запуск тестов локально
 
-1) Клонировать репозиторий: git clone git@github.com:falinpavel/biocad_autotests_project.git
+1) Клонировать репозиторий: git clone git@github.com:falinpavel/vsk_autotests_project.git
 2) Установить зависимости: pip install -r requirements.txt
 3) Запуск тестов с генерацией отчетов Allure: pytest --alluredir=reports/allure-results
 4) Просмотр отчета Allure (если установлен Allure CLI): allure serve reports/allure-results
