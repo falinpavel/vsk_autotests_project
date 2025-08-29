@@ -1,4 +1,5 @@
 import allure
+import pytest
 
 from helpers.application_manager.application_manager import vsk
 
@@ -12,6 +13,9 @@ class TestHealthServices:
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_switch_groups_in_health_section(self):
         vsk.clients_page \
             .open() \
@@ -29,6 +33,9 @@ class TestHealthServices:
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_service_antiklesch_is_displayed_in_season_group(self):
         vsk.clients_page \
             .open() \
@@ -44,6 +51,9 @@ class TestHealthServices:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_service_children_is_displayed_in_accidents_group(self):
         vsk.clients_page \
             .open() \
@@ -59,6 +69,9 @@ class TestHealthServices:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_service_adults_is_displayed_in_accidents_group(self):
         vsk.clients_page \
             .open() \
@@ -74,6 +87,9 @@ class TestHealthServices:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_service_family_is_displayed_in_accidents_group(self):
         vsk.clients_page \
             .open() \
@@ -89,6 +105,9 @@ class TestHealthServices:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_service_medicine_without_borders_is_displayed_in_critical_diseases_group(self):
         vsk.clients_page \
             .open() \
@@ -104,6 +123,9 @@ class TestHealthServices:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_service_airflow_is_displayed_in_about_health_group(self):
         vsk.clients_page \
             .open() \
@@ -119,6 +141,9 @@ class TestHealthServices:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_service_telemedicine_is_displayed_in_about_health_group(self):
         vsk.clients_page \
             .open() \
@@ -134,6 +159,9 @@ class TestHealthServices:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_service_invitro_is_displayed_in_about_health_group(self):
         vsk.clients_page \
             .open() \

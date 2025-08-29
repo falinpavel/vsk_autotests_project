@@ -1,5 +1,5 @@
 [tool.pytest.ini_options]
-addopts = "--alluredir=allure-results"
+addopts = "-v -s -l -rfEX --durations=10 --alluredir=allure-results"
 markers = [
     "web: Помечает тест как веб",
     "api: Помечает тест как api",

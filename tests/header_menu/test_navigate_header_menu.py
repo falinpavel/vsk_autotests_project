@@ -1,4 +1,5 @@
 import allure
+import pytest
 
 from helpers.application_manager.application_manager import vsk
 
@@ -12,6 +13,9 @@ class TestNavigateHeaderMenu:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.smoke
+    @pytest.mark.web
+    @pytest.mark.fast
     def test_transition_to_clients_page(self):
         vsk.clients_page \
             .open() \
@@ -22,6 +26,9 @@ class TestNavigateHeaderMenu:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.smoke
+    @pytest.mark.web
+    @pytest.mark.fast
     def test_transition_to_business_page(self):
         vsk.clients_page \
             .open() \
@@ -34,6 +41,9 @@ class TestNavigateHeaderMenu:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.smoke
+    @pytest.mark.web
+    @pytest.mark.fast
     def test_transition_to_career_page(self):
         vsk.clients_page \
             .open() \
@@ -46,6 +56,9 @@ class TestNavigateHeaderMenu:
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.smoke
+    @pytest.mark.web
+    @pytest.mark.fast
     def test_transition_to_offices_page(self):
         vsk.clients_page \
             .open() \

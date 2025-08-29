@@ -1,4 +1,5 @@
 import allure
+import pytest
 
 from helpers.application_manager.application_manager import vsk
 
@@ -12,6 +13,9 @@ class TestAutoServices:
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_policy_osago_is_displayed(self):
         vsk.clients_page \
             .open() \
@@ -26,6 +30,9 @@ class TestAutoServices:
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_policy_casco_is_displayed(self):
         vsk.clients_page \
             .open() \
@@ -40,6 +47,9 @@ class TestAutoServices:
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_policy_casco_compact_minimum_is_displayed(self):
         vsk.clients_page \
             .open() \
@@ -54,6 +64,9 @@ class TestAutoServices:
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_policy_transnational_systems_is_displayed(self):
         vsk.clients_page \
             .open() \
@@ -68,6 +81,9 @@ class TestAutoServices:
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.tag('UI', 'WEB')
     @allure.label('owner', 'QAQ Falin Pavel')
+    @pytest.mark.web
+    @pytest.mark.slow
+    @pytest.mark.regression
     def test_that_policy_osgop_is_displayed(self):
         vsk.clients_page \
             .open() \
